@@ -1,0 +1,24 @@
+.caixa {
+  width: 15em;
+  border-radius: 0px;
+  border-style: none solid dotted dashed;
+  /* border: 3px; */
+  // padding: 8px 12px;
+  background-image: linear-gradient(to top left , rgb(110, 220, 253), rgb(72, 253, 135))
+}
+
+table {
+  width: 15em;
+  border-width: 3px;
+  // display: inline-block;
+}
+
+tr {
+  background-color: rgb(238, 210, 150);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+td {
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+
+<!-- teste com ngStyle (sem data) -->
+<div>
+  <div class="container caixa">        
+      <a onclick="console.log('console log'), alert('alerta')">clica ae</a>
+  </div>
+  <div>
+    <!-- <div class="table-container"> -->
+      <div class="container">
+        <table>
+          <tbody>
+            <tr>
+              <td class="b1" 
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('none')">
+                none
+              </td>
+              <td class="b2"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('hidden')">
+                hidden
+              </td>
+              <td class="b3"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('dotted')">
+                dotted
+              </td>
+              <td class="b4"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('dashed')">
+                dashed
+              </td>
+              <td class="b5"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('solid')">
+                solid
+              </td>
+            </tr>
+            <tr>
+              <td class="b6"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('double')">
+                double
+              </td>
+              <td class="b7"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('groove')">
+                groove
+              </td>
+              <td class="b8"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('ridge')">
+                ridge
+              </td>
+              <td class="b9"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('inset')">
+                inset
+              </td>
+              <td class="b10"
+                [ngStyle]="{'border-style' : estiloBorda}"
+                (click)="mudaBorda('outset')">
+                outset
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <!-- </div> -->
+  </div>
+</div>
+
+<!--teste com forms (17/02/20)-->
+<div>
+  caracteristicas da cozinha<br>
+  <form
+    [formGroup]="cozinha"
+    (ngSubmit)="funcaoForm(cozinha.value)">
+    <input type="text" formControlName="mesa" placeholder="mesa"><br>
+    <input type="text" formControlName="cadeira" placeholder="cadeira"><br>
+    <input type="text" formControlName="pia" placeholder="pia"><br>
+    <input type="text" formControlName="fogao" placeholder="fogao"><br>
+    <input type="text" formControlName="geladeira" placeholder="geladeira"><br>
+    <button type="submit">qualquer coisa</button>
+  </form>
+</div>
